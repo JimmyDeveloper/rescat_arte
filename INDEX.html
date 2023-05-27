@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de cambio de imágenes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    
+<script>
+  function abrirImagen() {
+    var imagen1 = document.getElementById("image1");
+    imagen1.src = "img_pets/kitty_2.png";
+    setTimeout(function() {
+      window.location.href = "index_pet_2.html";
+    }, 2000);
+  }
+</script>
+
+<style>
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.img_star_kitty { 
+      max-width: 100%;
+      height: auto;}
+
+</style>
+
+</head>
+<body>
+  <center><h1>Bienvenido a Rescat-arte</h1></center>
+  <div class="container">
+<img class="img_star_kitty" id="image1" src="img_pets/kitty_1.png" alt="Imagen 1" onclick="abrirImagen()">
+  </div>
+
+</body>
+</html>
